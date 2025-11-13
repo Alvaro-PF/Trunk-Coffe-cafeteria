@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="../css/csscontacto.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <img id="logo" src="../img/logo (1).png" alt="Logo de la cafetería">
+    <h1>TRUNK & COFFEE</h1>
+  </header>
+  <!-- MENÚ -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="contenido">
+    <div class="domicilio">
+      <fieldset>
+        <legend>¿A nombre de quién será el pedido?</legend>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+      </fieldset>
+
+      <fieldset class="tipo-entrega">
+        <legend>Tipo de entrega</legend>
+        <label><input type="radio" name="entrega" value="tienda" required> Recoger en tienda</label>
+        <label><input type="radio" name="entrega" value="domicilio"> A domicilio</label>
+        <div class="direccion-entrega">
+          <label for="direccion">Dirección de entrega:</label>
+          <input type="text" id="direccion" name="direccion" placeholder="Calle, número, colonia, ciudad">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>¿Qué quieres pedir?</legend>
+        <select id="select-cafe" name="cafe" required>
+          <option value="">-- Selecciona un CAFÉ --</option>
+          <option value="cafe1">CAFE 1</option>
+          <option value="cafe2">CAFE 2</option>
+          <option value="cafe3">CAFE 3</option>
+          <option value="cafe4">CAFE 4</option>
+          <option value="cafe5">CAFE 5</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>¿Algún extra para tu café?</legend>
+        <label><input type="radio" name="extra" value="nada" checked> Nada</label>
+        <label><input type="radio" name="extra" value="canela"> Canela</label>
+        <label><input type="radio" name="extra" value="jengibre"> Jengibre</label>
+        <label><input type="radio" name="extra" value="nuez"> Nuez Moscada</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>¿Pensando en algo de comer?</legend>
+        <label><input type="checkbox" name="comida" value="1"> comida1</label>
+        <label><input type="checkbox" name="comida" value="2"> comida2</label>
+        <label><input type="checkbox" name="comida" value="3"> comida3</label>
+        <label><input type="checkbox" name="comida" value="4"> comida4</label>
+        <label><input type="checkbox" name="comida" value="5"> comida</label>
+      </fieldset>
+
+      <button type="submit">Confirmar pedido</button>
+    </div>
+
+    <section class="mapa">
+      <iframe 
+        src="https://www.openstreetmap.org/export/embed.html?bbox=7.3806%2C43.9346%2C7.4206%2C43.9546&amp;layer=mapnik"
+        allowfullscreen 
+        loading="lazy">
+      </iframe>
+    </section>
+  </div>
+
+  <footer>
+    <p>©2025 TRUNK & COFFEE S.A.</p>
+  </footer>
+</body>
+</html>
